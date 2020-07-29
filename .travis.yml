@@ -7,3 +7,13 @@ before_install:
 
 script:
     - docker run -e CI=true singhabhinav/react-project npm run test
+
+deploy:
+    provider: elasticbeanstalk
+    region: us-west-1 # Specify your region
+    app: "docker"
+    env: "DockerReactProject-env" # Copy it from Elastic Beanstalk dashboard
+    bucket_name: "elasticbeanstalk-us-west-1-034275272121"
+    bucket_path: "docker"
+    on:
+        branch: master
