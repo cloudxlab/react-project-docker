@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t li[idocker1/react-project -f Dockerfile_dev .
+    - docker build -t lipdocker1/react-project -f Dockerfile_dev .
 
 script:
     - docker run -e CI=true lipidocker1/react-project npm run test
