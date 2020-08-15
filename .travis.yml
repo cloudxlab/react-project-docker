@@ -3,10 +3,10 @@ services:
     - docker
 
 before_install:
-    - docker build -t singhabhinav/react-project -f Dockerfile_dev .
+    - docker build -t khushkk7/react-project -f Dockerfile_dev .
 
 script:
-    - docker run -e CI=true singhabhinav/react-project npm run test
+    - docker run -e CI=true khushkk7/react-project npm run test
 
 #deploy:
 #    provider: elasticbeanstalk
