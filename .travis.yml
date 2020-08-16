@@ -10,12 +10,14 @@ script:
 
 #deploy:
 #    provider: elasticbeanstalk
-#    region: us-west-1 # Specify your region
+     region: us-west-1 # Specify your region
 #    app: "docker-react-project" # Copy it from Elastic Beanstalk dashboard
+     app: "react-project-cloudxlabs" 
 #    env: "DockerReactProject-env-2" # Copy it from Elastic Beanstalk dashboard
-#    bucket_name: "elasticbeanstalk-us-west-1-034275272121"
-#    bucket_path: "docker"
-#    access_key_id: $AWS_ACCESS_KEY
-#    secret_access_key: $AWS_SECRET_KEY
-#    on:
-#        branch: master
+     env: "ReactProjectCloudxlabs-env"
+     bucket_name: "elasticbeanstalk-us-west-1-157104795055"
+     bucket_path: "docker"
+     access_key_id: $AWS_ACCESS_KEY
+     secret_access_key: $AWS_SECRET_KEY
+     on:
+         branch: master
