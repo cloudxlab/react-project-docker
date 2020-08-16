@@ -1,4 +1,4 @@
-#test ravi govindu edites
+#test updated ravi govindu edites
 sudo: required
 services:
     - docker
@@ -9,7 +9,7 @@ before_install:
 script:
     - docker run -e CI=true rkgovindu/react-project-prod npm run test
 
-#deploy:
+deploy:
     provider: elasticbeanstalk
     region: us-west-1 # Specify your region
     app: "react-project-docker" # Copy it from Elastic Beanstalk dashboard
