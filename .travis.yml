@@ -7,7 +7,7 @@ before_install:
 
 script:
     - docker run -e CI=true lipidocker1/react-project:prod npm run test
-#
+
 #deploy:
    provider: elasticbeanstalk
    region: us-west-1 # Specify your region
