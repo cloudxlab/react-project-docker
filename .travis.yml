@@ -8,8 +8,8 @@ before_install:
 script:
     - docker run -e CI=true khushkk7/react-project npm run test
 
-#deploy:
-#    provider: elasticbeanstalk
+deploy:
+     provider: elasticbeanstalk
      region: us-west-1 # Specify your region
 #    app: "docker-react-project" # Copy it from Elastic Beanstalk dashboard
      app: "react-project-cloudxlabs" 
