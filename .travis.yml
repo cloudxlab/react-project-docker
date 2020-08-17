@@ -13,7 +13,7 @@ deploy:
     region: us-west-1 # Specify your region
     app: "react-project-prod" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
     env: "ReactProjectProd-env" # Copy it from Elastic Beanstalk dashboard
-    bucket_name: "elasticbeanstalk-us-west-1-422800408520"
+    bucket_name: "arn:aws:s3:::elasticbeanstalk-us-west-1-422800408520"
     bucket_path: "docker"
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
