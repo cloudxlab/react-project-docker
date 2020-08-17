@@ -10,7 +10,7 @@ script:
 
 deploy:
     provider: elasticbeanstalk
-    region: us-west-1 # Specify your region
+    region: us-west-1 # Specify your regiiiion
     app: "ReactProject2" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
     env: "Reactproject2-env" # Copy it from Elastic Beanstalk dashboard
     bucket_name: "elasticbeanstalk-us-west-1-422800408520"
