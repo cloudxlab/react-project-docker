@@ -11,8 +11,8 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: us-west-1 # Specify your region
-    app: "react-project1" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
-    env: "ReactProject1-env" # Copy it from Elastic Beanstalk dashboard
+    app: "ReactProject2" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
+    env: "Reactproject2-env" # Copy it from Elastic Beanstalk dashboard
     bucket_name: "elasticbeanstalk-us-west-1-422800408520"
     bucket_path: "docker"
     access_key_id: $AWS_ACCESS_KEY
