@@ -12,6 +12,9 @@ COPY package.json ./
 
 # Install dependencies
 RUN npm install
+#RUN npm install -g npm-check-updates
+#RUN npm install -g @angular/cli@latest
+
 
 # Copy the source code from your work directory to the container's work directory
 COPY . .
