@@ -9,15 +9,27 @@ script:
     - docker run -e CI=true khushkk7/react-project npm run test
 
 deploy:
-     provider: elasticbeanstalk
+   - provider: elasticbeanstalk
      region: us-west-1 # Specify your region
-#    app: "docker-react-project" # Copy it from Elastic Beanstalk dashboard
-     app: "react-project-cloudxlabs" 
-#    env: "DockerReactProject-env-2" # Copy it from Elastic Beanstalk dashboard
-     env: "ReactProjectCloudxlabs-env"
-     bucket_name: "elasticbeanstalk-us-west-1-157104795055"
-     bucket_path: "docker"
+#    app: docker-react-project # Copy it from Elastic Beanstalk dashboard
+     app: react-project-cloudxlabs
+#    env: DockerReactProject-env-2 # Copy it from Elastic Beanstalk dashboard
+     env: ReactProjectCloudxlabs-env
+     bucket_name: elasticbeanstalk-us-west-1-157104795055
+     bucket_path: docker
      access_key_id: $AWS_ACCESS_KEY
      secret_access_key: $AWS_SECRET_KEY
      on:
-         branch: feature_a
+         branch: master
+   - provider: elasticbeanstalk
+     region: us-west-1 # Specify your region
+#    app: docker-react-project # Copy it from Elastic Beanstalk dashboard
+     app: react-project-cloudxlabs-staging
+#    env: DockerReactProject-env-2 # Copy it from Elastic Beanstalk dashboard
+     env: ReactTestStaging-env
+     bucket_name: elasticbeanstalk-us-west-1-157104795055
+     bucket_path: docker
+     access_key_id: $AWS_ACCESS_KEY 
+     secret_access_key: $AWS_SECRET_KEY
+     on:
+         branch: staging
