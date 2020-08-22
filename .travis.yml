@@ -9,13 +9,24 @@ script:
     - docker run -e CI=true singhabhinav/react-project npm run test
 
 deploy:
-    provider: elasticbeanstalk
-    region: us-east-2 # Specify your region
-    app: "react-project-docker" # Copy it from Elastic Beanstalk dashboard
-    env: "ReactProjectDocker-env" # Copy it from Elastic Beanstalk dashboard
-    bucket_name: "elasticbeanstalk-us-east-2-784361934830"
-    bucket_path: "docker"
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    on:
-        branch: master
+    - provider: elasticbeanstalk
+      region: us-east-2 # Specify your region
+      app: "react-project-docker" # Copy it from Elastic Beanstalk dashboard
+      env: "ReactProjectDocker-env" # Copy it from Elastic Beanstalk dashboard
+      bucket_name: "elasticbeanstalk-us-east-2-784361934830"
+      bucket_path: "docker"
+      access_key_id: $AWS_ACCESS_KEY
+      secret_access_key: $AWS_SECRET_KEY
+      on:
+          branch: master
+    - provider: elasticbeanstalk
+      region: us-east-2 # Specify your region
+      app: "react-project-docker-staging" # Copy it from Elastic Beanstalk dashboard
+      env: "ReactProjectDockerStaging-env" # Copy it from Elastic Beanstalk dashboard
+      bucket_name: "elasticbeanstalk-us-east-2-784361934830"
+      bucket_path: "docker"
+      access_key_id: $AWS_ACCESS_KEY
+      secret_access_key: $AWS_SECRET_KEY
+      on:
+          branch: staging
+
