@@ -24,7 +24,7 @@ deploy:
    - provider: elasticbeanstalk
      region: us-west-1 # Specify your region
 #    app: docker-react-project # Copy it from Elastic Beanstalk dashboard
-     app: react-project-cloudxlabs-staging
+     app: react_test_staging
 #    env: DockerReactProject-env-2 # Copy it from Elastic Beanstalk dashboard
      env: ReactTestStaging-env
      bucket_name: elasticbeanstalk-us-west-1-157104795055
