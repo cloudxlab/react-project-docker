@@ -9,13 +9,26 @@ script:
     - docker run -e CI=true rkgovindu/react-project:prod npm run test
 
 deploy:
-    provider: elasticbeanstalk
-    region: us-west-1 # Specify your regiiiion
-    app: "ReactProject2" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
-    env: "Reactproject2-env" # Copy it from  1 Elastic Beanstalk dashboard
-    bucket_name: "elasticbeanstalk-us-west-1-422800408520"
-    bucket_path: "docker"
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    on:
-        branch: master
+    - provider: elasticbeanstalk
+      region: us-west-1 # Specify your regiiiion
+      app: "ReactProject2" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
+      env: "Reactproject2-env" # Copy it from  1 Elastic Beanstalk dashboard
+      bucket_name: "elasticbeanstalk-us-west-1-422800408520"
+      bucket_path: "docker"
+      access_key_id: $AWS_ACCESS_KEY
+      secret_access_key: $AWS_SECRET_KEY
+      on:
+          branch: master
+
+
+    - provider: elasticbeanstalk
+      region: us-west-1 # Specify your regiiiion
+      app: "eact-project1" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
+      env: "ReactProject1-env" # Copy it from  1 Elastic Beanstalk dashboard
+      bucket_name: "elasticbeanstalk-us-west-1-422800408520"
+      bucket_path: "docker"
+      access_key_id: $AWS_ACCESS_KEY
+      secret_access_key: $AWS_SECRET_KEY
+      on:
+          branch: feature
+
