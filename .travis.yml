@@ -1,3 +1,4 @@
+
 sudo: required
 services:
     - docker
@@ -17,7 +18,7 @@ deploy:
      env: ReactProjectCloudxlabs-env
      bucket_name: elasticbeanstalk-us-west-1-157104795055
      bucket_path: docker
-     access_key_id: $AWS_ACCESS_KEY
+     access_key_id: $AWS_ACCESS_KEY 
      secret_access_key: $AWS_SECRET_KEY
      on:
          branch: master
@@ -29,7 +30,7 @@ deploy:
      env: ReactTestStaging-env
      bucket_name: elasticbeanstalk-us-west-1-157104795055
      bucket_path: docker
-     access_key_id: $AWS_ACCESS_KEY 
+     access_key_id: $AWS_ACCESS_KEY
      secret_access_key: $AWS_SECRET_KEY
      on:
          branch: staging
