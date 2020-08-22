@@ -23,7 +23,7 @@ deploy:
 
   - provider: elasticbeanstalk
     region: us-west-1 # Specify your regiiiion
-    app: "eact-project1" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
+    app: "react-project1" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
     env: "ReactProject1-env" # Copy it from  1 Elastic Beanstalk dashboard
     bucket_name: "elasticbeanstalk-us-west-1-422800408520"
     bucket_path: "docker"
