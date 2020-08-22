@@ -31,4 +31,4 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     on:
        branch: feature
-
+       all_branches: true
