@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />        <p>
-          Edit <code>src/App.js</code> and save to AWS reload HELLO  by Ravi Govindu.
+          Edit <code>src/App.js</code> and save to ****AWS Travic CI ****** HELLO  by Ravi Govindu.
         </p>
         <a
           className="App-link"
