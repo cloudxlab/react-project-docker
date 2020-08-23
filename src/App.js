@@ -8,11 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-<<<<<<< HEAD
-          Edit <code>src/App.js</code> and save to reload by khushk(staging)(keypair_test).
-=======
-          Edit <code>src/App.js</code> and save to reload by khushk(feature_a)(stage_test).
->>>>>>> feature_a
+          Edit <code>src/App.js</code> and save to reload by khushk(staging)(keypair_test)
         </p>
         <a
           className="App-link"
