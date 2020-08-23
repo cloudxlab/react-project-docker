@@ -8,7 +8,7 @@ before_install:
 script:
     - docker run -e CI=true singhabhinav/react-project npm run test
 
-#deploy:
+##deploy:
  #   provider: elasticbeanstalk
   #  region: us-west-1 # Specify your region
    # app: "docker-react-project" # Copy it from Elastic Beanstalk dashboard
