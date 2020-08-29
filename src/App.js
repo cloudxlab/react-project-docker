@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />        <p>
-          Edit <code>src/App.js</code> and save to ****AWS Travic CI ****** HELLO  by Ravi Govindu.
+          Edit <code>src/App.js</code> and save to ****AWS Travic CI ****** HELLO  by Ravi Govindu. - updated 29 Aug 2020
         </p>
         <a
           className="App-link"
