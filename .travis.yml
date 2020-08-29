@@ -12,7 +12,7 @@ deploy:
   - provider: elasticbeanstalk
     region: us-west-1 # Specify your regiiiion
     app: "ReactProject2" # Copy ishkkjashdk t from Elastic Beanstalk dashboard
-    env: "Reactproject2-env" # Copy it from  1 Elastic Beanstalk dashboard
+    env: "Reactproject2-env" # Copy it from i1 1 Elastic Beanstalk dashboard
     bucket_name: "elasticbeanstalk-us-west-1-422800408520"
     bucket_path: "docker"
     access_key_id: $AWS_ACCESS_KEY
@@ -31,6 +31,6 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     on:
        branch: feature
-       all_branches: true
-       condition: $TRAVIS_BRANCH =~ ^(feature|master)$
+
+
 
