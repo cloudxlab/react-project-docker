@@ -3,19 +3,20 @@ services:
     - docker
 
 before_install:
-    - docker build -t singhabhinav/react-project -f Dockerfile_dev .
+    - docker build -t tarunreddy1506/react-project -f Dockerfile_dev .
 
 script:
-    - docker run -e CI=true singhabhinav/react-project npm run test
+    - docker run -e CI=true tarunreddy1506/react-project npm run test
 
-#deploy:
-#    provider: elasticbeanstalk
-#    region: us-west-1 # Specify your region
-#    app: "docker-react-project" # Copy it from Elastic Beanstalk dashboard
-#    env: "DockerReactProject-env-2" # Copy it from Elastic Beanstalk dashboard
-#    bucket_name: "elasticbeanstalk-us-west-1-034275272121"
-#    bucket_path: "docker"
-#    access_key_id: $AWS_ACCESS_KEY
-#    secret_access_key: $AWS_SECRET_KEY
-#    on:
-#        branch: master
+deploy:
+    provider: elasticbeanstalk
+    region: us-east-1 # Specify your region
+    app: "react-project-docker" # Copy it from Elastic Beanstalk dashboard
+    env: "ReactProjectDocker-env" # Copy it from Elastic Beanstalk dashboard
+    bucket_name: "elasticbeanstalk-us-east-1-726200788467"
+    bucket_path: "docker"
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    on:
+        branch: master
+
